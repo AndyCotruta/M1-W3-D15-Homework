@@ -1,0 +1,75 @@
+body {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#dividing-line {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: black;
+  height: 2px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: brown;
+}
+
+.borderClass {
+  border: 2px solid black;
+}
+
+table {
+  border-radius: 6px;
+  border-collapse: collapse;
+}
+
+p {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.changeFont {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+th {
+  border: 1px solid green;
+}
+
+td {
+  border: 1px solid green;
+}
+
+tr {
+  border: 2px dotted red;
+}
+
+img {
+  width: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.test {
+  background-color: rgb(230, 161, 161);
+}
+
+.yellow {
+  background-color: yellow;
+}
