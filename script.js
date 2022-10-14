@@ -212,11 +212,11 @@ for (let i = 0; i < tds.length; i++) {
 
 const removeRandomTd = function () {
   const tds = document.querySelectorAll("td");
-  for (let i = 0; i < tds.length; i++) {
-    const randomIndex = Math.floor(Math.random() * tds.length);
-    tds[randomIndex].classList.add("hidden");
-  }
+  //   for (let i = 0; i < tds.length; i++) {
+  const randomIndex = Math.floor(Math.random() * tds.length);
+  tds[randomIndex].classList.add("hidden");
 };
+// };
 
 function tableCreate() {
   const body = document.body,
@@ -224,6 +224,7 @@ function tableCreate() {
   tbl.style.width = "200px";
   tbl.style.aspectRatio = 1 / 1;
   tbl.style.border = "1px solid black";
+  tbl.id = "createdTable";
 
   for (let i = 0; i < 4; i++) {
     const tr = tbl.insertRow();
@@ -237,7 +238,7 @@ function tableCreate() {
 }
 
 const deleteCreatedTable = function () {
-  const tbl = document.querySelector("tbl");
+  const tbl = document.getElementById("createdTable");
   console.log(tbl);
-  tbl.innerHtml = "";
+  tbl.remove();
 };
